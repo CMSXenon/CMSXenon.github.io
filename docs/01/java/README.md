@@ -85,3 +85,74 @@ Java SE (Java Platform Standard Edition)：Java标准平台，所有的项目都
 
 JavaEE (Java Platform Enterprise Edition)：java企业版，以企业为环境而开发应用程序的解决方案
 
+
+
+# 对象流
+
+
+
+
+
+
+
+# 序列化
+
+## 1.1概念
+
+对象序列化就是把对象写入到输出流中，用来存储或者传输。
+
+反序列化就是从输入流中读取对象。
+
+具体描述：把一个引用类型，拆分成最小的单位byte，以便今后数据字节流的形式存储在磁盘中或者是通过网络协议发送另一方。
+
+它是数据存储和发送的一种重要技术。
+
+## 1.2 使用方法
+
+已定义好一个Dog类型如下图：
+
+![1658753899397](image/Serializable序列化/DogClass.png)
+
+然后在测试类中创建一个Doge对象
+
+~~~~java
+//创建DogTest对象
+DogTest doge = new DogTest("xiaohei",2,"公");
+~~~~
+
+接着定位目标文件位置，使序列化后的对象输出在该文件位置
+
+~~~java
+//目标文件位置，序列化后对象输出在该文件位置
+File file = new File("C:\\Users\\gg\\Desktop\\DogeTest01.data");
+~~~
+
+再就是创建OutputStream文件输出流
+
+~~~java
+ //创建OutputStream文件输出流
+ OutputStream out = new FileOutputStream(file);
+ ObjectOutputStream oos = new ObjectOutputStream(out);
+ //文件输出方法
+ oos.writeObject(doge);
+ oos.close();
+~~~
+
+代码全局图
+
+![](C:\Users\gg\Desktop\CMSXenon.github.io\docs\01\java\image\Serializable序列化\SerializableTest02.1the whole code.png)
+
+
+
+# X、进程
+
+## 1.1 进程概念
+
+进程 Process，就是一个应用程序在运行期间向系统所申请的资源（硬件、软件）的总和。
+
+
+
+## 1.2 线程概念
+
+线程Thread ，“是一个轻量级的进程”
+
