@@ -77,3 +77,11 @@ java语言之父是詹姆斯.高斯林,原来在IBM公司任职,联合几位小�
 
 
 
+## 1.3 java的三大技术平台
+
+
+
+Java SE (Java Platform Standard Edition)：Java标准平台，所有的项目都需要JavaSE的支持，包括JavaEE和JavaME。
+
+JavaEE (Java Platform Enterprise Edition)：java企业版，以企业为环境而开发应用程序的解决方案
+
