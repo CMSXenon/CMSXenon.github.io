@@ -138,9 +138,9 @@ File file = new File("C:\\Users\\gg\\Desktop\\DogeTest01.data");
  oos.close();
 ~~~
 
-代码全局图
+全部代码
 
-![](C:\Users\gg\Desktop\CMSXenon.github.io\docs\01\java\image\Serializable序列化\SerializableTest02.1the whole code.png)
+
 
 
 
@@ -148,11 +148,39 @@ File file = new File("C:\\Users\\gg\\Desktop\\DogeTest01.data");
 
 ## 1.1 进程概念
 
-进程 Process，就是一个应用程序在运行期间向系统所申请的资源（硬件、软件）的总和。
+程序是指令和数据的有序集合，其本身没有任何运行的含义，是一个静态的概念。
+
+而进程 Process，就是一个应用程序在运行期间向系统所申请的资源（硬件、软件）的总和，是程序在处理机上的一次执行过程，它是一个动态的概念。
+
+进程是一个具有一定独立功能的程序，是一个实体，每一个进程都有它自己的地址空间。
+
+进程是一个应用程序在运行期间，它所申请的资源(软件、硬件)的总和，它是当前应用程序所“独占”的内存中划定的一块区域。
+
+当一个应用程序功能足够复杂时，它可能会由多个进程组成，每一个进程都会承担或者提供相应的某一项功能。
 
 
+
+进程的状态有：就绪、运行、阻塞。
+
+![The state of thread](C:\Users\gg\Desktop\CMSXenon.github.io\docs\01\java\image\Thread\The state of thread.png)
 
 ## 1.2 线程概念
 
-线程Thread ，“是一个轻量级的进程”
+线程Thread ，“是一个轻量级的进程”。它实际上是在进程基础之上的进一步划分，一个进程启动之后，里面的若干程序又可以划分成若干个线程。
+
+线程又是进程的一个执行路径，共享一个内存空间，线程之间可以自由切换，并发执行，一个进程最少有一个线程。
+
+一个线程如果想要运算，必须先争抢到CPU的时间片，才有机会让CPU来计算程序中指定的逻辑，并且由调度器来决定哪个线程什么时候来执行CPU运算。
+
+
+
+## 1.3 线程的实现方法
+
+
+
+
+
+
+
+
 
